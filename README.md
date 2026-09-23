@@ -1,29 +1,32 @@
-# Jar Analyzer — Minecraft Cheat Detector
+# Jar Analyzer
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-Windows%2010%2F11-8B0000?style=for-the-badge" alt="Platform">
-  <img src="https://img.shields.io/badge/Architecture-x64-8B0000?style=for-the-badge" alt="Architecture">
-  <img src="https://img.shields.io/badge/Status-Stable-8B0000?style=for-the-badge" alt="Status">
+  <b>Minecraft JAR Analyzer & Cheat Detection Tool</b>
+  <br>
+  Built for <b>SSers</b> and Minecraft Server Staff
 </p>
 
 <p align="center">
-  <b>Advanced JAR analysis and Minecraft cheat detection tool.</b><br>
-  Developed by <b>ValyaR</b>
+  <a href="../../releases">
+    <img src="https://img.shields.io/badge/Download-Releases-8B0000?style=for-the-badge" alt="Download">
+  </a>
+  <img src="https://img.shields.io/badge/Platform-Windows%2010%2F11-8B0000?style=for-the-badge" alt="Windows">
+  <img src="https://img.shields.io/badge/Architecture-x64-8B0000?style=for-the-badge" alt="x64">
 </p>
 
 <p align="center">
-  Discord: <code>_iaec</code>
+  <b>Developed by ValyaR</b> · Discord: <code>_iaec</code>
 </p>
 
 ---
 
-## Overview
+## About
 
-**Jar Analyzer** is a Windows-based tool designed to analyze Minecraft JAR files and identify cheats, ghost clients, suspicious components, obfuscation indicators, and other potentially malicious or unauthorized modifications.
+**Jar Analyzer** is a Minecraft **SSing tool** designed for **SSers (Screen Sharers)** and server staff who need to inspect a player's JAR files during a screen share.
 
-The analyzer performs deep inspection of JAR archives and their classes using signature-based detection, weighted scoring, and behavioral analysis.
+It analyzes JAR files for known cheat signatures, ghost clients, suspicious code, obfuscation indicators, and other findings that may require further investigation.
 
-> **Built for Minecraft server protection, Screen Sharing (SS), and security analysis.**
+> Built as a tool for Minecraft server security, SSing, and cheat investigation.
 
 ---
 
@@ -32,87 +35,106 @@ The analyzer performs deep inspection of JAR archives and their classes using si
 ### 🔍 Deep JAR Analysis
 
 * Constant-pool analysis
-* Class-level inspection
-* Nested JAR detection
+* Class inspection
+* Nested-JAR inspection
 * Manifest analysis
-* Archive structure analysis
+* Archive-structure analysis
 * Suspicious file detection
-* Large-scale JAR scanning
+* Scan JARs across available drives
 
 ### 🧬 Cheat Detection
 
 Detects indicators associated with:
 
-* Combat modules
-* Movement modules
-* Render modules
+* Combat cheats
+* Movement cheats
+* Render modifications
 * Bypass modules
 * Ghost clients
 * Cheat frameworks
 * Suspicious mixins
-* Known cheat families
 * Obfuscation markers
+* Known cheat signatures
 
-Known families and frameworks may include:
+### ⚖️ Weighted Detection
 
-* Dqrkis
-* Doomsday
-* Nova
-* Vape
-* Meteor
-* And many others
+Every signature has a weight from **1–4**.
 
-### ⚖️ Weighted Detection System
+Multiple findings are combined to determine the final verdict.
 
-Every detection signature is assigned a weight from **1–4**.
+| Verdict           | Meaning                   |
+| :---------------- | :------------------------ |
+| 🟢 **Clean**      | No significant findings   |
+| 🔵 **Notable**    | Weak indicators           |
+| 🟡 **Suspicious** | Requires investigation    |
+| 🟠 **Detected**   | Strong cheat indicators   |
+| 🔴 **Critical**   | Strong cheat/family match |
+| ⚫ **Unreadable**  | JAR could not be analyzed |
 
-Multiple findings are combined to produce a final verdict instead of relying on a single signature.
+### 🕵️ Behavioral Detection
 
-| Verdict           | Description                       |
-| ----------------- | --------------------------------- |
-| 🟢 **Clean**      | No significant indicators found   |
-| 🔵 **Notable**    | Weak or low-confidence indicators |
-| 🟡 **Suspicious** | Requires further investigation    |
-| 🟠 **Detected**   | Strong cheat-related indicators   |
-| 🔴 **Critical**   | Strong cheat or family match      |
-| ⚫ **Unreadable**  | Archive could not be analyzed     |
-
-### 🕵️ Behavioral Analysis
-
-Jar Analyzer can identify suspicious combinations and behavioral patterns, including:
+Detects suspicious combinations and behaviors such as:
 
 * Agent injection indicators
 * String decryptors
 * Self-destruct routines
 * Hollow-shell patterns
 * Suspicious class combinations
-* Obfuscation behavior
 
 ### 💻 Built-in Decompiler
 
-Includes a built-in **CFR-powered decompiler** with:
+Includes a **CFR-powered decompiler** for deeper SS investigation.
+
+Features include:
 
 * Source-code viewing
 * Code search
-* Multiple themes
+* Themes
 * HTML export
-* Suspicious-code investigation
 
-### 🌍 Bilingual Interface
-
-Available in:
+### 🌍 Bilingual UI
 
 * 🇺🇸 English
 * 🇸🇦 العربية
 
-With a dark red interface designed for quick analysis during SS sessions.
-
 ### 📦 Portable
 
-* Single executable
+* Single `.exe`
 * No Java installation required
 * No .NET installation required
-* Designed for Windows 10/11 x64
+* Windows 10/11 x64
+
+---
+
+## How It Is Used in SSing
+
+Jar Analyzer is intended to be used as **one part of an SSer's investigation workflow**.
+
+A typical workflow:
+
+```text
+Player enters SS
+       │
+       ▼
+SSer collects relevant files
+       │
+       ▼
+Jar Analyzer scans JARs
+       │
+       ├── Clean
+       ├── Notable
+       ├── Suspicious
+       ├── Detected
+       └── Critical
+       │
+       ▼
+SSer investigates the findings
+       │
+       ▼
+Final decision based on the complete SS
+```
+
+The tool **does not automatically determine whether a player is cheating**. Findings should be reviewed by the SSer together with the rest of the SS evidence.
 
 ---
 
@@ -120,9 +142,7 @@ With a dark red interface designed for quick analysis during SS sessions.
 
 ### 1. Download
 
-Download the latest release from:
-
-**[Releases](../../releases)**
+Download the latest version from **[Releases](../../releases)**.
 
 ### 2. Launch
 
@@ -132,111 +152,63 @@ Run:
 JarAnalyzer-*.exe
 ```
 
-Accept the UAC prompt when requested.
+Accept the UAC prompt if requested.
 
 ### 3. Scan
 
-Use:
+Click:
 
 ```text
 SCAN ALL DRIVES
 ```
 
-to scan available drives for JAR files.
-
-You can also **drag and drop a JAR file** directly into the application.
-
----
-
-## Detection Engine
-
-Jar Analyzer combines several detection methods:
-
-```text
-JAR
- │
- ├── Archive Analysis
- │
- ├── Manifest Analysis
- │
- ├── Constant Pool Analysis
- │
- ├── Class Analysis
- │
- ├── Signature Detection
- │
- ├── Behavioral Rules
- │
- └── Weighted Scoring
-          │
-          ▼
-       Verdict
-```
-
-This approach helps reduce reliance on a single detection signature.
+or drag and drop a JAR file directly into the application.
 
 ---
 
 ## Detection Categories
 
-| Category    | Examples                                           |
-| ----------- | -------------------------------------------------- |
-| Combat      | Reach, KillAura-related indicators, combat modules |
-| Movement    | Movement modification indicators                   |
-| Render      | Render manipulation indicators                     |
-| Bypass      | Anti-detection and bypass indicators               |
-| Injection   | Agent and injection indicators                     |
-| Obfuscation | Obfuscator and encrypted-code indicators           |
-| Frameworks  | Known cheat/client framework signatures            |
-| Mixins      | Suspicious or cheat-related mixins                 |
-| Behavioral  | Self-destruct, decryptor, shell patterns           |
+| Category    | Examples                                  |
+| :---------- | :---------------------------------------- |
+| Combat      | Combat-related cheat indicators           |
+| Movement    | Movement modification indicators          |
+| Render      | Render manipulation indicators            |
+| Bypass      | Anti-detection indicators                 |
+| Injection   | Agent/injection indicators                |
+| Obfuscation | Obfuscator and encrypted-code indicators  |
+| Frameworks  | Known cheat/client frameworks             |
+| Mixins      | Suspicious mixins                         |
+| Behavioral  | Decryptors, self-destruct, shell patterns |
 
 ---
 
 ## System Requirements
 
-| Requirement   | Minimum         |
-| ------------- | --------------- |
-| OS            | Windows 10 / 11 |
-| Architecture  | x64             |
-| Java          | Not required    |
-| .NET          | Not required    |
-| Administrator | Recommended     |
-
----
-
-## False Positives
-
-No signature-based detection system can guarantee perfect results.
-
-Legitimate mods may contain:
-
-* Obfuscated code
-* Mixins
-* Injected classes
-* Custom class loaders
-* Encryption/decryption systems
-* Libraries shared with cheat clients
-
-**Always review the findings before taking action against a player.**
+| Requirement   | Supported    |
+| :------------ | :----------- |
+| Windows       | 10 / 11      |
+| Architecture  | x64          |
+| Java          | Not required |
+| .NET          | Not required |
+| Administrator | Recommended  |
 
 ---
 
 ## Disclaimer
 
-Jar Analyzer is provided for **educational, research, and Minecraft server-protection purposes**.
+Jar Analyzer is intended for **Minecraft server protection, SSing, security research, and educational purposes**.
 
-Detection is heuristic and signature-based. The results should be treated as indicators rather than absolute proof.
+Detection is **heuristic and signature-based** and may produce false positives or false negatives.
 
-The developer is not responsible for actions taken solely based on the tool's detection results.
+**Never take action against a player based solely on one Jar Analyzer result. Always review the findings and the rest of the SS evidence.**
 
 ---
 
 ## License
 
-This project is **proprietary software**.
+**Proprietary Software — All Rights Reserved**
 
-Copyright © 2026 **ValyaR**. All rights reserved.
+Copyright © 2026 **ValyaR**
 
 You may not:
 
@@ -244,27 +216,23 @@ You may not:
 * Publish modified versions
 * Remove or replace the author's name
 * Claim the software as your own
-* Sell or repackage the software without permission
+* Repackage or sell the software without permission
 
-See [`LICENSE`](LICENSE) for the complete license terms.
+See [`LICENSE`](LICENSE) for the full license.
 
 ---
 
 ## Credits
 
-### Developer
+**Developer:** ValyaR
+**Discord:** `_iaec`
 
-**ValyaR**
-
-Discord: **`_iaec`**
-
-### Decompiler
-
-Powered by **CFR**.
+**Decompiler:** CFR
 
 ---
 
 <p align="center">
-  <b>Jar Analyzer</b><br>
-  Minecraft JAR Analysis & Cheat Detection
+  <b>Jar Analyzer</b>
+  <br>
+  Minecraft SSing • JAR Analysis • Cheat Detection
 </p>
