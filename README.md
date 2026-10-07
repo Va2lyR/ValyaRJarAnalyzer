@@ -1,8 +1,21 @@
 # Jar Analyzer
 
-Minecraft JAR analyzer built for **SSers and server staff**.
+<p align="center">
+  <img src="https://img.icons8.com/fluency/96/search-in-list.png" width="72">
+</p>
 
-Scans Minecraft JAR files for **cheat clients, ghost clients, hacked clients, suspicious mods, and other suspicious JAR files**.
+<p align="center">
+  <b>Minecraft JAR Analyzer & Cheat Detection Tool</b><br>
+  Built for <b>SSers</b> and Minecraft server staff
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Windows%2010%2F11-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Architecture-x64-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Portable-Yes-8B0000?style=flat-square">
+</p>
+
+---
 
 ## Features
 
@@ -11,7 +24,7 @@ Scans Minecraft JAR files for **cheat clients, ghost clients, hacked clients, su
 * **Mod Detection** — Analyzes Minecraft mods for suspicious components.
 * **JAR Analysis** — Inspects classes, code, manifests, and JAR structure.
 * **Obfuscation Detection** — Finds suspicious or heavily obfuscated code.
-* **Behavior Detection** — Detects suspicious code such as injectors, decryptors, and self-destruct behavior.
+* **Behavior Detection** — Detects injectors, decryptors, self-destruct behavior, and similar patterns.
 * **Nested JAR Scanning** — Scans JARs inside other JARs.
 * **Built-in Decompiler** — Inspect suspicious code directly.
 * **Drive Scanning** — Scan JAR files across available drives.
@@ -21,9 +34,18 @@ Scans Minecraft JAR files for **cheat clients, ghost clients, hacked clients, su
 
 ## Detects
 
-**Hacked Clients** · **Ghost Clients** · **Cheat Mods** · **Suspicious Mods** · **Hack JARs** · **Cheat Signatures** · **Injectors** · **Obfuscated JARs** · **Suspicious Code**
+<p align="center">
+  <img src="https://img.shields.io/badge/Hacked%20Clients-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Ghost%20Clients-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Cheat%20Mods-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Suspicious%20Mods-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Hack%20JARs-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Cheat%20Signatures-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Injectors-8B0000?style=flat-square">
+  <img src="https://img.shields.io/badge/Obfuscated%20JARs-8B0000?style=flat-square">
+</p>
 
-### Verdicts
+## Verdicts
 
 **Clean** · **Notable** · **Suspicious** · **Detected** · **Critical** · **Unreadable**
 
@@ -31,8 +53,15 @@ Scans Minecraft JAR files for **cheat clients, ghost clients, hacked clients, su
 
 ## Requirements
 
-* Windows 10/11
-* x64
+<p>
+  <img src="https://img.icons8.com/color/24/windows-11.png"> Windows 10 / 11<br>
+  <img src="https://img.icons8.com/fluency/24/processor.png"> x64<br>
+  <img src="https://img.icons8.com/fluency/24/portable.png"> Portable
+</p>
 
-**Developer:** ValyaR
-**Discord:** `_iaec`
+## Developer
+
+<p>
+  <img src="https://img.icons8.com/fluency/24/developer.png"> <b>ValyaR</b><br>
+  <img src="https://img.icons8.com/color/24/discord-logo.png"> <b>_iaec</b>
+</p>
