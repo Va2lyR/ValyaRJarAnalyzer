@@ -16,7 +16,11 @@
   <img src="https://img.shields.io/badge/Windows-10%2F11-8B0000?style=for-the-badge">
   <img src="https://img.shields.io/badge/x64-8B0000?style=for-the-badge">
 </p>
-
+<p align="center">
+  <a href="https://github.com/Va2lyR/ValyaRJarAnalyzer/releases/tag/2.3.1">
+    <img src="https://img.shields.io/badge/Download%20Now-2.3.1-1683ff?style=for-the-badge&logo=github&logoColor=white" alt="Download Now">
+  </a>
+</p>
 ---
 
 ## Features
@@ -60,10 +64,6 @@
   <img src="https://img.icons8.com/fluency/24/cpu.png"> x64<br>
   <img src="https://img.icons8.com/fluency/24/usb-drive.png"> Portable
 </p>
+Developer
 
-## Developer
-
-<p>
-  <img src="https://img.icons8.com/fluency/24/source-code.png"> <b>ValyaR</b><br>
-  <img src="https://img.icons8.com/color/24/discord-logo.png"> <a href="https://discord.com/users/1196537044231520356"><code>_iaec</code></a>
-</p>
+<p align="center"> <img src="https://img.shields.io/badge/Developer-ValyaR-1683ff?style=for-the-badge&logo=github&logoColor=white"> <a href="https://discord.com/users/1196537044231520356"> <img src="https://img.shields.io/badge/Discord-_iaec-1683ff?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"> </a> </p>
